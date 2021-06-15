@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>landing</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <div id="app-header" class="flex-x-b">
+      <div class="login flex-x">
+        <div><img src="./assets/Group 1@2x.png" /></div>
+        <div>NOODLES</div>
+      </div>
+      <div class="nav flex-x" data-aos="fade-left">
+        <div class="nav-item active" onclick="gotoPage('home',this)">Home</div>
+        <div class="nav-item" onclick="gotoPage('tokenomics',this)">
+          Tokenomics
+        </div>
+        <div class="nav-item" onclick="gotoPage('roadmap',this)">Roadmap</div>
+        <div class="nav-item" onclick="gotoPage('features',this)">Features</div>
+      </div>
+    </div>
+    <div id="home">
+      <div class="home-body">
+        <div class="home-title flex-y" data-aos="zoom-out">
+          <div class="flex-x"><span></span> Welcome to <span></span></div>
+          <div>NOODLES INU</div>
+          <div class="flex-x">
+            <button>
+              <img src="./assets/buying.svg" /><span>BUY NOW</span>
+            </button>
+            <button>
+              <img src="./assets/Dextools.svg" /><span>DEX TOOLS</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="tokenomics">
+      <div class="flex-x">
+        <div class="tokenomics-title" data-aos="fade-left">
+          Tokenomics<span></span>
+        </div>
+      </div>
+
+      <div class="tokenomics-blocks" data-aos="fade-up">
+        <div class="tokenomics-block">
+          <div>Token symbol</div>
+          <div>$noodlesinu</div>
+        </div>
+        <div class="tokenomics-block">
+          <div>Holders Reward</div>
+          <div>5% Tax</div>
+        </div>
+        <div class="tokenomics-block">
+          <div>30% initial burn</div>
+          <div>Bot Protection</div>
+        </div>
+        <div class="tokenomics-block">
+          <div>Total supply</div>
+          <div>1 Trillion</div>
+        </div>
+        <div class="tokenomics-block">
+          <div>Token symbol</div>
+          <div>10% Team Tax</div>
+        </div>
+        <div class="tokenomics-block">
+          <div>All tokens at Uniswap Liquidity</div>
+          <div>Fair Launch</div>
+        </div>
+      </div>
+    </div>
+    <div id="features" class="flex">
+      <div class="features-title" data-aos="fade-left">
+        Features<span></span>
+      </div>
+      <div class="features-blocks flex-x" data-aos="fade-up">
+        <div class="features-block">
+          <img src="./assets/Rewrds.svg" />
+          <div>Rewards</div>
+          <div>5 percenage reward for holders</div>
+        </div>
+        <div class="features-block">
+          <img src="./assets/team.svg" />
+
+          <div>Team</div>
+          <div>10% team tax for dev & marketing</div>
+        </div>
+        <div class="features-block">
+          <img src="./assets/bot.svg" />
+
+          <div>Bots</div>
+          <div>Buy limit & cooldown to prevent bots</div>
+        </div>
+      </div>
+    </div>
+    <div id="roadmap">
+      <div class="roadmap-title" data-aos="fade-left">Roadmap<span></span></div>
+      <div class="roadmap-blocks flex" data-aos="fade-up">
+        <div class="roadmap-block">
+          <div class="roadmap-heading">Initial Launch</div>
+          <div>Uniswap Listing</div>
+          <div>Website Launch</div>
+          <div>500 Holders</div>
+          <div>Whitepaper</div>
+        </div>
+        <div class="roadmap-block">
+          <div class="roadmap-heading">Road to the Moon</div>
+          <div>CEX Listing</div>
+          <div>1500 Holders</div>
+          <div>Coingecko & CMC Listing</div>
+        </div>
+        <div class="roadmap-block">
+          <div class="roadmap-heading">Moon Session</div>
+          <div>Big Exchanges Listing</div>
+          <div>Dev & Marketing Team Expansion</div>
+        </div>
+      </div>
+    </div>
+    <div id="faq" class="flex">
+      <div class="faq-title" data-aos="fade-left">
+        Frequently<br />
+        asked<span></span><br />
+        questions
+      </div>
+      <div class="faq-blocks" data-aos="fade-up">
+        <div class="faq-block" onclick="setOpened(this)">
+          <div class="question flex-x-b">
+            What's the contract id?<img
+              src="./assets/thick_arrow_pointing_down.svg"
+            />
+          </div>
+          <div class="answer">
+            <ol>
+              <li>Download MetaMask or Trust Wallet.</li>
+              <li>
+                Set network to Ethereum Mainnet and make sure you have ETH in
+                your wallet
+              </li>
+              <li>
+                Go to Uniswap and enter the contract address. This will be given
+                30 minutes before launch to ensure it is fair for everyone
+                purchasing!
+              </li>
+              <li>
+                Set slippage to 17% on Uniswap to buy (same with selling) and
+                now you’re a part of Chief Shiba.
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="faq-block" onclick="setOpened(this)">
+          <div class="question flex-x-b">
+            how do I buy noodles inu?<img
+              src="./assets/thick_arrow_pointing_down.svg"
+            />
+          </div>
+          <div class="answer">
+            <ol>
+              <li>Download MetaMask or Trust Wallet.</li>
+              <li>
+                Set network to Ethereum Mainnet and make sure you have ETH in
+                your wallet
+              </li>
+              <li>
+                Go to Uniswap and enter the contract address. This will be given
+                30 minutes before launch to ensure it is fair for everyone
+                purchasing!
+              </li>
+              <li>
+                Set slippage to 17% on Uniswap to buy (same with selling) and
+                now you’re a part of Chief Shiba.
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="faq-block" onclick="setOpened(this)">
+          <div class="question flex-x-b">
+            What's the contract id?<img
+              src="./assets/thick_arrow_pointing_down.svg"
+            />
+          </div>
+          <div class="answer">
+            <ol>
+              <li>Download MetaMask or Trust Wallet.</li>
+              <li>
+                Set network to Ethereum Mainnet and make sure you have ETH in
+                your wallet
+              </li>
+              <li>
+                Go to Uniswap and enter the contract address. This will be given
+                30 minutes before launch to ensure it is fair for everyone
+                purchasing!
+              </li>
+              <li>
+                Set slippage to 17% on Uniswap to buy (same with selling) and
+                now you’re a part of Chief Shiba.
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="faq-block" onclick="setOpened(this)">
+          <div class="question flex-x-b">
+            What's the contract id?<img
+              src="./assets/thick_arrow_pointing_down.svg"
+            />
+          </div>
+          <div class="answer">
+            <ol>
+              <li>Download MetaMask or Trust Wallet.</li>
+              <li>
+                Set network to Ethereum Mainnet and make sure you have ETH in
+                your wallet
+              </li>
+              <li>
+                Go to Uniswap and enter the contract address. This will be given
+                30 minutes before launch to ensure it is fair for everyone
+                purchasing!
+              </li>
+              <li>
+                Set slippage to 17% on Uniswap to buy (same with selling) and
+                now you’re a part of Chief Shiba.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer" class="footer flex-y" data-aos="fade-down">
+      <div>JOIN OUR COMMUNITY</div>
+      <div class="flex-x">
+        <a href="https://t.me/NoodlesCalls" target="_blank"
+          ><img src="assets/telegram_app.svg"
+        /></a>
+        <a href="https://twitter.com/criptopaul" target="_blank"
+          ><img src="assets/twitter (1).svg"
+        /></a>
+      </div>
+      <div>NOODLES INU</div>
+    </div>
+
+    <script>
+      AOS.init({
+        duration: 800,
+        easing: "ease-in-out",
+        once: true,
+        mirror: false,
+      });
+      function gotoPage(div, elem) {
+        var element = document.getElementsByClassName("active");
+        element[0].classList.remove("active");
+        var elmntToView = document.getElementById(div);
+        elem.classList.add("active");
+        elmntToView.scrollIntoView();
+      }
+
+      function setOpened(elem) {
+        // var element = document.getElementsByClassName("active");
+        // element[0].classList.remove("active");
+        // var elmntToView = document.getElementById(div);
+        elem.classList.toggle("opened");
+        // elmntToView.scrollIntoView();
+
+        // console.log(elem.chilldNodes, elem, elem.lastElementChild.classList.toggle(""));
+      }
+    </script>
+  </body>
+</html>
